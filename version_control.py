@@ -20,7 +20,16 @@ def encode(password):
     
     return new_pass
 
-
+#def decode(password):
+    #og_pass = ""
+    #for i in range(len(password)):
+        #if int(password[i]) > 2:
+            #og_pass += str(int(password[i]) - 3)
+        #elif int(password[i]) =< 2:
+            #temp = int(password[i]) + 10
+            #og_pass += str(int(temp) - 3)
+    
+    #return og_pass
 
 if __name__ == '__main__':
     menu()
@@ -36,6 +45,7 @@ if __name__ == '__main__':
             print("Your password has been encoded and stored!")
 
         elif option == 2:
+            #password = decode(new_pass)
             print("The encoded password is " + new_pass + ", and the original password is " + password)
         
         elif option == 3: 
